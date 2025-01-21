@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h1>Input Form</h1>
+    <form>
+        <!-- Text Input -->
+        <label for="text">Name:</label>
+        <input type="text" id="text" name="name" placeholder="Enter your name" required><br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Number Input -->
+        <label for="number">Age:</label>
+        <input type="number" id="number" name="age" min="0" max="120" required><br><br>
+
+        <!-- Date Input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Month Input -->
+        <label for="month">Select Month:</label>
+        <input type="month" id="month" name="month"><br><br>
+
+        <!-- Week Input -->
+        <label for="week">Select Week:</label>
+        <input type="week" id="week" name="week"><br><br>
+
+        <!-- Time Input -->
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time"><br><br>
+
+        <!-- Datetime-local Input -->
+        <label for="datetime">Appointment Date and Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime"><br><br>
+
+        <!-- Color Picker -->
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <!-- Range Input -->
+        <label for="range">Select a Range:</label>
+        <input type="range" id="range" name="range" min="0" max="100"><br><br>
+
+        <!-- File Upload -->
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file"><br><br>
+
+        <!-- Image Input -->
+        <label for="image">Submit an Image:</label>
+        <input type="image" id="image" name="image" src="" alt="Submit Image"><br><br>
+
+        <!-- Radio Buttons -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Checkbox -->
+        <p>Hobbies:</p>
+        <input type="checkbox" id="hobby1" name="hobbies" value="Reading">
+        <label for="hobby1">Reading</label><br>
+        <input type="checkbox" id="hobby2" name="hobbies" value="Traveling">
+        <label for="hobby2">Traveling</label><br>
+        <input type="checkbox" id="hobby3" name="hobbies" value="Gaming">
+        <label for="hobby3">Gaming</label><br><br>
+
+        <!-- Select Dropdown -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="us">Bangladesh</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United States</option>
+        </select><br><br>
+
+        <!-- Search Input -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Search something"><br><br>
+
+        <!-- Hidden Input -->
+        <input type="hidden" id="hidden" name="hiddenField" value="hiddenValue">
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comments"></textarea><br><br>
+
+        <!-- Telephone Input -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" title="Format: 123-456-7890"><br><br>
+
+        <!-- URL Input -->
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com"><br><br>
+
+        <!-- Reset Button -->
+        <button type="reset">Reset</button>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
