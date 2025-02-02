@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 1500px;
+    height: 800px;
+    background-color: azure;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    
+}
+
+.pain{
+    width: 600px;
+
+}
+
+.chain{
+    width: 1000px;
+    height: 500px;
+    background: url("./images/car.avif");
+}

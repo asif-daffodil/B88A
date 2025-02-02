@@ -1,0 +1,52 @@
+.main{
+    
+   height: 700px;
+   width: 250px;
+   float: left;
+   margin: 20px auto;
+  
+   display: flex;
+ flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+padding: 10px;
+   
+   
+
+}
+h3{
+    background-color: white;
+    color: black;
+    font-style: normal;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+font-weight: lighter;   
+   
+}
+
+p{
+    background-color: white;
+    color: black;
+    font-style: normal;
+    font-size: 15px;
+    text-justify: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button{
+    color:white;
+    background-color: blue;
+    
+    
+ 
+}
+img{
+   display: flex;
+
+    float: right;
+    height: 400px;
+    width: 350px;
+    margin-top: auto;
+    display: flex;
+  flex-wrap: wrap;
+}
