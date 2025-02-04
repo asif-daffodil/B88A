@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent{
+    width: 100%;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    background: #ccc;
+}
+
+.parent > div {
+    background: #fff;
+    border-radius: 6px;
+}
+
+.parent > div > img {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+}
+
+.parent > div > div {
+    padding: 20px;
+}
+
+.parent > div > div > h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.parent > div > div > p {
+    color: #666;
+}
+
+.parent > div > div > h5 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: darkorange;
+}
+
+.parent > div > div > button {
+    color: white;
+    background: orange;
+    border-width: 0;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
