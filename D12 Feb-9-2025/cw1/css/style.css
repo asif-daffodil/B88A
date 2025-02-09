@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+footer {
+    width: 100%;
+    background: #333;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer > ul {
+    list-style: none;
+}
+
+footer > ul > li:first-child {
+    color: orange;
+    font-size: 20px;
+}
+
+footer > ul > li {
+    margin-bottom: 20px;
+}
+
+footer > ul > li > a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+footer > ul > li:not(:first-child) > a:hover {
+    color: orange;
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
+}
