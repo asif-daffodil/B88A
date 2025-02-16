@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+.main{
+    width:50% ;
+    height: 70px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+   position: absolute;
+   border: 10px ;
+
+    
+    padding: 45px;
+  
+   cursor:pointer;
+  
+   
+}
+
+.main1{
+    color: blue;
+    font-style: normal;
+    text-decoration: white;
+    
+}
+h2{
+    padding: 25px;
+    font-style:normal;
+    text-decoration:underline;
+    
+}
+.main1>h2
+{
+    background:white;
+    color:black;
+}
+
+p
+{
+    text-align: start;
+    font-size: 15px;
+    background:white;
+   
+    color: gray;
+    
+    
+}
+p1{
+    white-space:nowrap;
+
+color:black;
+text-align: right;
+
+
+}
+
+img{
+    width: 250px;
+    height: 350px;
+    
+}
+
+img:hover{
+transform: scale(1.1);
+}
+
+button{
+    background: blue;
+    color: white;
+    height: 40px;
+    width: 200px;
+    border-radius: 6px;
+      
+
+
+}
+fa-solid fa-star{
+    color: black;
+}
+

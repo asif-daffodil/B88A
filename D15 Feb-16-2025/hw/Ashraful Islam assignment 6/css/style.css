@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: max-content;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    font-family: "IBM Plex Sans", serif;
+}
+
+.main > div{
+    height: max-content;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #eeeeee;
+
+}
+
+.main > div > img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.main > div > .cover{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.main > div:hover > .cover{
+    opacity: 0.3;
+}
+
+.main > div > .msg{
+    width: 80%;
+    height: max-content;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    border-radius: 8px;
+    position: absolute;
+    left: 10%;
+    top: 120%;
+    transition: 0.5s;
+}
+
+.msg > p{
+    color: dodgerblue;
+}
+
+.main > div:hover > .msg{
+    top: 65%;
+}
+
+.main > div > .stars {
+    opacity: 0;
+    transition: 0.5s;
+    color: gold;
+}
+
+.main > div:hover > .stars {
+    opacity: 1;
+}

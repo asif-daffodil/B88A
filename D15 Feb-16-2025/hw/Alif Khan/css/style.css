@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 80px;
+    font-family: sans-serif;
+
+}
+
+.alif{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    padding: 30px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 6px;
+    overflow: hidden;
+    
+}
+
+.alif>img{
+    width: 100%;
+}
+
+.siam{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.main>.alif:hover>.siam{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.msg{
+    width: 90%;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    text-align: center;
+    display: grid;
+    gap: 2px;
+    border-radius: 8px;
+    padding: 20px;
+    top: 120%;
+}
+
+.main>.alif:hover>.msg{
+    top: 56%;
+    transition: 0.5s;
+}
+
+.msg>b{
+    color: blue;
+}
+
+.msg>h5{
+    font-size: 20px;
+}
+
+.msg>h3{
+    font-size: 15px;
+    color:#facc15 ;
+}
+
+h3>i:last-child{
+    color: gray;
+    opacity: 0.50;
+}
