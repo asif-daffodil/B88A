@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+.main-nav{
+    width: 100%;
+    background: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.main-nav > .main-menu{
+    display: flex;
+    list-style: none;
+}
+
+.main-menu > li:not(:last-child){
+    margin-right: 20px;
+}
+
+.main-menu li{
+    position: relative;
+    width: max-content;
+}
+
+.main-menu li::before{
+    content: '';
+    width: 0;
+    height: 2px;background-color: red;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transition: 0.5s;
+}
+
+.main-menu li:hover::before{
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+.main-menu li a{
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+    display: block;
+}
+
+.main-nav > .main-menu > li > .sub-menu{
+    list-style: none;
+    background: #333;
+    position: absolute;
+    top: 160px;
+    left: -20px;
+    width: calc(max-content + 40px);
+    padding: 20px;
+    visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.main-nav > .main-menu > li:hover > .sub-menu{
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 2px);
+}
+
+.sub-sub-menu {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 120%;
+    width: 240px;
+    background-color: #333;
+    box-shadow: 0px 2px 5px #333;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sub-menu > li:hover > .sub-sub-menu {
+    visibility: visible;
+    opacity: 1;
+    left: 150%;
+}

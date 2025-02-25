@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+.main-nav{
+width: 100%;
+background: #333;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding:  40px;
+
+}
+
+.main-nav > .main-menu
+{
+    list-style: none;
+    display: flex;
+}
+.main-nav>.logo>
+a>img{
+    filter: drop-shadow(2px 2px 2px #333 );
+}
+.main-nav>.main-menu >li:not(:last-child){
+    margin: 30px;
+}
+
+
+img{
+    width:300px;
+    height:200px;
+
+}
+.main-nav > .main-menu li {
+    position: relative;
+    width: max-content;
+}
+
+.main-nav > .main-menu li::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transition: 0.5s;
+}
+
+.main-nav > .main-menu li:hover::before {
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+.main-nav > .main-menu li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 30px;
+    display: block;
+}
+
+.main-nav > .main-menu > li >.sub-menu{
+    list-style: none;
+    background: #333;
+    position: absolute;
+    top: 160px;
+    left: -20px;
+    width: calc(max-content + 40px);
+    padding: 20px;
+    visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.main-nav > .main-menu > li:hover > .sub-menu{
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + 2px);

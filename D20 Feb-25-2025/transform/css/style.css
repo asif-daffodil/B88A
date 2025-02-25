@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.div1:hover {
+    transform: translate(50px, 50px);
+}
+
+.div2:hover {
+    transform: rotateZ(360deg);
+}
+
+.div3:hover {
+    transform: scale(0.5);
+}
+
+.div4:hover {
+    transform: skew(30deg, 30deg);
+} 
+
+.div5:hover {
+    transform: translate(50px, 50px) rotateZ(360deg) scale(0.5) skew(30deg, 30deg);
+} 

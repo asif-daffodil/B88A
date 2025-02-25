@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        color: red;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    h1 {
+        color: blue;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    h1 {
+        color: green;
+    }
+}
+

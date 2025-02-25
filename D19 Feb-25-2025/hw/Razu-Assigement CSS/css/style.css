@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-nav {
+    width: 100%;
+    display: flex;
+        background: #f1f1f1;
+    padding: 0px 20px;
+  
+}
+
+.logo {
+    width: 100%;
+   
+}
+
+.main-nav>.main-menu
+{
+    position: relative;
+    width: max-content;
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+}
+.main-nav>.main-menu li a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    -webkit-box-align: center;
+    height: 100%;
+    padding: 0 20px;
+}
+.main-nav>.main-menu li >.picture 
+{
+height: max-content;
+width: 100%;
+overflow: hidden;
+position: absolute;
+padding: 2opx;
+display: grid;
+grid-template-columns: repeat(4 , 1fr);
+gap: 20px;
+transform: translateY(20px);
+transition: .2s;
+}
+.sub-menu{
+    list-style: none;
+}
+.main-nav>.main-menu li >.sub-menu{
+    position: absolute;
+    background: #f1f1f1;
+    width: max-content;
+    top: 0;
+    left: 100%;
+    list-style: none;
+    transition: .2s;
+    visibility: hidden;
+    transform: translateX(5%);
+
+
+}
+.main-nav>.main-menu li :hover>.sub-menu
+{
+    transform: translateX(-50%,0%);
+}
+.main-nav>.main-menu li :hover > .picture{
+    transform: translateY(0px);
+    visibility: visible;
+}
+
+.main-nav>.main-menu li>.picture> img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+

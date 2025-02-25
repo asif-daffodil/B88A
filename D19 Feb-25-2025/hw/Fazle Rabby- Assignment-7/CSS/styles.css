@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 5px 20px;
+}
+.logo img {
+    height: 40px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    
+}
+.nav-links li {
+    position: relative;
+    width: max-content;
+    margin: 0 15px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 5px 0;
+    position: relative;
+    display: inline-block;
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 0;
+    height: 6px;
+    background: red;
+    transition: 0.5s;
+}
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+.dropdown > .submenu {
+    
+    display: none;
+    position: absolute;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 40px;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.dropdown:hover > .submenu {
+    display: block;
+}
+.submenu li {
+    padding: 10px;
+    white-space: nowrap;
+}
+.submenu a {
+    color: black;
+}
+.submenu .dropdown > .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    padding: 10px;
+}
+.submenu .dropdown:hover > .submenu {
+    display: block;
+}
+
+.portfolio-images img {
+    width: 100px;
+    float: left;
+
+    
+    margin: 0 5px;
+}
+.submenu .portfolio-images::after{
+    content: "";
+    clear: both;
+    display: table
+    }

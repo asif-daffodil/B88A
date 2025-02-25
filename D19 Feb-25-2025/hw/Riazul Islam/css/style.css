@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-nav {
+    width: 100%;
+    background: #f5f3f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.main-nav > .main-menu {
+    display: flex;
+    list-style: none;
+}
+
+.main-nav > .main-menu > li {
+    margin-right: 50px;
+    
+}
+
+.main-nav > .main-menu  li {
+    position: relative;
+}
+
+.main-nav > .main-menu  li::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transition: 0.5s;
+}
+.main-nav > .main-menu  li:hover::before {
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+
+.main-nav > .main-menu  li  a {
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+
+}
+
+.main-nav > .main-menu > li > .sub-menu {
+    list-style: none;
+    background: #f5f3f3;
+    position: absolute;
+    top: 44px;
+    left: -20px;
+    width: max-content;
+    padding: 20px 10px 10px 10px ;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.main-nav > .main-menu > li:hover > .sub-menu {
+    visibility: visible;
+}
+
