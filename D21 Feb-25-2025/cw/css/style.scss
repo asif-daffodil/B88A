@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$headingColor: #33f;
+
+@mixin heading ($fs: 16px, $fw: bold) {
+    color: $headingColor;
+    font-weight: $fw;
+    font-size: $fs;
+}
+
+h1{
+    @include heading(36px, lighter);
+}
+
+h2{
+    @include heading();
+}
