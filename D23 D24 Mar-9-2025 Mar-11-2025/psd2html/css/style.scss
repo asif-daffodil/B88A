@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'arialMt-regular';
+    src: url("../fonts/ARIALMTMEDIUM.TTF");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arialMt-regular';
+}
+
+body {
+    background: #1d2e41;
+}
+
+.container {
+    width: 620px;
+    margin: 0 auto;
+
+    >.top-header {
+        font-size: 11px;
+        color: #85acb3;
+        background-color: #283b46;
+        display: flex;
+        justify-content: space-between;
+        line-height: 34px;
+        padding: 0 20px;
+
+        a {
+            color: #85acb3;
+        }
+
+        >ul {
+            list-style: none;
+            display: flex;
+            gap: 13px;
+            align-items: center;
+        }
+    }
+
+    >.header {
+        background: #394b58;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 79px;
+        padding: 22px;
+
+        >span {
+            font-family: 'arialMt-regular';
+            color: rgb(156, 165, 172);
+            line-height: 1.125;
+        }
+    }
+
+    >.banner {
+        width: 620px;
+        height: 275px;
+        background: linear-gradient(to bottom, #f0f0f0, #e6e6e6);
+        border: 1px solid #dcdcdc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 22px;
+
+        >.left {
+            >h1 {
+                font-size: 26px;
+                color: rgb(40, 108, 158);
+                font-weight: bold;
+                line-height: 1.099;
+            }
+
+            >p {
+                font-size: 12px;
+                color: rgb(102, 116, 125);
+                line-height: 1.5;
+                margin: 13px 0;
+            }
+
+            >button {
+                border-radius: 4px;
+                background-image: -moz-linear-gradient(90deg, rgb(43, 56, 65) 0%, rgb(57, 75, 88) 100%);
+                background-image: -webkit-linear-gradient(90deg, rgb(43, 56, 65) 0%, rgb(57, 75, 88) 100%);
+                background-image: -ms-linear-gradient(90deg, rgb(43, 56, 65) 0%, rgb(57, 75, 88) 100%);
+                box-shadow: inset 0px 0px 4px 0px rgba(16, 17, 17, 0.2);
+                width: 167px;
+                height: 37px;
+                font-size: 13px;
+                color: rgb(255, 255, 255);
+                text-transform: uppercase;
+                line-height: 1.385;
+                text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+                position: relative;
+            }
+
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 59px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #cccccc;
+            box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(255, 255, 255, 0.6);
+            transform: translateY(-50%);
+        }
+    }
+
+    >.fp {
+        border-top: 1px solid rgba(16, 17, 17, 0.1);
+        border-bottom: 1px solid rgba(16, 17, 17, 0.1);
+        background-color: rgb(244, 244, 244);
+        box-shadow: 0px 2px 6px 0px rgba(16, 17, 17, 0.15), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.3);
+        color: rgb(57, 75, 88);
+        line-height: 1.25;
+        line-height: 38px;
+        padding: 0 22px;
+        font-size: 16px;
+    }
+
+    >.fpd{
+        background: #fff;
+        padding: 36px 0;
+        >.product{
+            display: flex;
+            gap: 20px;
+            padding: 0 22px;
+            &:first-child{
+                margin-bottom: 23px;
+            }
+            >.img{
+                border: 1px solid #e4e2e2;
+                padding: 6px;
+                display: flex;
+                flex-direction: column;
+                >img{
+                    border: 1px solid #e4e2e2;
+                }
+                >.price{
+                    line-height: 18px;
+                    font-size: 12px;
+                    color: #808080;
+                }
+                >.save{
+                    line-height: 18px;
+                    font-size: 12px;
+                    color: #3479ab;
+                }
+            }
+            >.details{
+                >h3{
+                    font-size: 16px;
+                    color: #333333;
+                    line-height: 14px;
+                    margin-bottom: 17px;
+                }
+                >p{
+                    font-size: 12px;
+                    color: #808080;
+                    line-height: 18px;
+                    margin-bottom: 17px;
+                }
+                >ul{
+                    color: #808080;
+                    list-style-position: inside;
+                    margin-bottom: 17px;
+                    >li{
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                }
+                >a{
+                    color: #3479ab;
+                    text-decoration: none;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    >.lpd{
+        padding: 36px 20px;
+        background: #fff;
+        display: grid;
+        gap: 20px;
+        >div {
+            border: 1px solid #e2e0e0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            color: #808080;
+            >div{
+                font-size: 12px;
+                padding: 35px 18px;
+                position: relative;
+                &:not(:last-child){
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 1px;
+                        height: 80%;
+                        background: #e2e0e0;
+                    }
+                }
+                img{
+                    display: block;
+                    margin: auto;
+                    margin-bottom: 30px;
+                    height: 72px;
+                    width: 100%;
+                    object-fit: contain;
+                }
+                >p:nth-child(2){
+                    font-weight: bold;
+                }
+                >a{
+                    text-decoration: none;
+                    color: #3479ab;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    >span {
+        position: absolute;
+        animation: norbe 4s infinite;
+        font-size: 48px;
+        text-transform: uppercase;
+    }
+    &::before{
+        content: '';
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: mainBefore 4s infinite;
+    }
+    &::after{
+        content: '';
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation: mainAfter 4s infinite;
+    }
+}
+
+@keyframes mainBefore {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes mainAfter {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes norbe {
+    0% {
+        top: 0;
+        left: 0;
+        transform: translate(20px, 20px);
+    }
+    25% {
+        top: 0;
+        left: 100%;
+        transform: translate(calc(-100% - 20px), 20px);
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+        transform: translate(calc(-100% - 20px), calc(-100% - 20px));
+    }
+    75% {
+        top: 100%;
+        left: 0;
+        transform: translate(20px, calc(-100% - 20px));
+    }
+    100% {
+        top: 0;
+        left: 0;
+        transform: translate(20px, 20px);
+    }
+}
