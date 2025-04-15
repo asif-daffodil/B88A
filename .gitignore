@@ -1,0 +1,8 @@
+# ignore all .psd files
+*.psd
+# ignore all .log files
+*.log
+# ignore all .tmp files
+*.tmp
+# ignore all node_modules folders
+node_modules
