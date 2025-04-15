@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            User Name
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Update Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Change Password</a></li>
+                            <li><a class="dropdown-item" href="#">Admin Panel</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                        <button type="submit" class="input-group-text btn btn-primary" id="basic-addon1"><i
+                                class="bi bi-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Carousel start -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="./images/slide1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/slide2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/slide3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carousel end -->
+
+    <!-- our team start -->
+    <div class="container mt-5">
+        <h2 class="text-center">Our Team</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 text-center">
+                <img src="./images/team1.jpg" alt="" class="img-fluid rounded-circle mb-3" width="200px">
+                <h5>John Doe</h5>
+                <p>Web Developer</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="./images/team2.jpg" alt="" class="img-fluid rounded-circle mb-3" width="200px">
+                <h5>Jane Smith</h5>
+                <p>Graphic Designer</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="./images/team3.jpg" alt="" class="img-fluid rounded-circle mb-3" width="200px">
+                <h5>Stephanie Mcmahon</h5>
+                <p>Project Manager</p>
+            </div>
+        </div>
+    <!-- our team end -->
+
+    <!-- bs-card img-top client feedback start -->
+     <div class="row mt-5">
+        <div class="col-12 mb-4">
+            <h2 class="text-center">Client Feedback</h2>
+            <p class="text-center">What our clients say about us</p>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="./images/client1.jpg" class="card-img-top" alt="Client 1">
+                <div class="card-body">
+                    <h5 class="card-title">Client Name 1</h5>
+                    <p class="card-text">"Great service and support!"</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="./images/client2.jpg" class="card-img-top" alt="Client 2">
+                <div class="card-body">
+                    <h5 class="card-title">Client Name 2</h5>
+                    <p class="card-text">"Highly recommend this team!"</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="./images/client3.jpg" class="card-img-top" alt="Client 3">
+                <div class="card-body">
+                    <h5 class="card-title">Client Name 3</h5>
+                    <p class="card-text">"Exceptional quality and service!"</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="./images/client4.jpg" class="card-img-top" alt="Client 4">
+                <div class="card-body">
+                    <h5 class="card-title">Client Name 4</h5>
+                    <p class="card-text">"Outstanding experience!"</p>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- bs-card img-top client feedback end -->
+
+    <!-- contact-us start -->
+     <div class="row mt-5">
+        <div class="col-md-4">
+            <h2 class="text-center">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-8">
+            <h2 class="text-center">Contact Person</h2>
+            <!-- contact details table -->
+            <table class="table table-dark table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Web Developer</td>
+                        <td>john@example.com</td>
+                        <td>(123) 456-7890</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Graphic Designer</td>
+                        <td>jane@example.com</td>
+                        <td>(987) 654-3210</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Graphic Designer</td>
+                        <td>jane@example.com</td>
+                        <td>(987) 654-3210</td>
+                    </tr>
+                    <tr>
+                        <td>New Name</td>
+                        <td>Freelancer</td>
+                        <td>new@example.com</td>
+                        <td>(555) 555-5555</td>
+                    </tr>
+                    <tr>
+                        <td>New Name</td>
+                        <td>Freelancer</td>
+                        <td>new@example.com</td>
+                        <td>(555) 555-5555</td>
+                    </tr>
+                    <tr>
+                        <td>New Name</td>
+                        <td>Freelancer</td>
+                        <td>new@example.com</td>
+                        <td>(555) 555-5555</td>
+                    </tr>
+                </tbody>
+
+                <!-- office address -->
+                <tfoot>
+                    <tr>
+                        <td colspan="4" class="text-center">Office Address: 123 Main St, City, Country</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="col-12 mt-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.397672081983!2d90.36733127522177!3d23.73319438943683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bfbe6c0bab8b%3A0x8784d7f5150e9ae3!2sAsif%20Abir!5e0!3m2!1sen!2sbd!4v1744713996270!5m2!1sen!2sbd" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+     </div>
+    <!-- contact-us end -->
+
+    <!-- Details of Asif Abir start -->
+     <div class="row mt-5">
+        <div class="col-md-4">
+            <img src="./images/Asif Abir.jpg" alt="" class="img-fluid rounded w-100">
+        </div>
+        <div class="col-md-8 d-flex align-items-center">
+            <div>
+                <h2>Asif Abir</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus minus quisquam inventore, maxime necessitatibus facilis quia in aspernatur asperiores repellat ab ut illum ullam a velit perspiciatis laboriosam ipsam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus minus quisquam inventore, maxime necessitatibus facilis quia in aspernatur asperiores repellat ab ut illum ullam a velit perspiciatis laboriosam ipsam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus minus quisquam inventore, maxime necessitatibus facilis quia in aspernatur asperiores repellat ab ut illum ullam a velit perspiciatis laboriosam ipsam.
+                </p>
+                <ul class="navbar-nav d-flex flex-row gap-2 mb-3">
+                    <li class="nav-item"></li>
+                        <a href="" class="nav-link">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a href="" class="nav-link">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a href="" class="nav-link">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a href="" class="nav-link">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#asifmodal">Read more</button>
+            </div>
+        </div>
+     </div>
+    <!-- Details of Asif Abir end -->
+
+
+    <!-- Asif Modal Strart -->
+     
+    <div class="modal fade" id="asifmodal" tabindex="-1" aria-labelledby="asifModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-bg-info">
+                    <h5 class="modal-title" id="asifModalLabel">Asif Abir</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Detailed information about Asif Abir goes here.</p>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="bi bi-twitter"></i> Twitter
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="bi bi-whatsapp"></i> WhatsApp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Asif Modal End -->
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

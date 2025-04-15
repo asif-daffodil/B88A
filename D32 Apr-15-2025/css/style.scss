@@ -1,0 +1,11 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
