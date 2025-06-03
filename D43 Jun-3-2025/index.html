@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="myid">Demo text</div>
+    <div class="myClass">Another text</div>
+    <div>Another text</div>
+    <button onclick="btnFunc()">Click Here</button>
+    <button id="myBtn">Another Button</button>
+
+    <div>
+        <button id="lightOn">On</button>
+        <img src="./images/pic_bulboff.gif" alt="" id="lightImg">
+        <button id="lightOff">Off</button>
+    </div>
+
+    <script>
+        // document.getElementById("myid").innerHTML = "Hello World";
+        // document.getElementsByClassName("myClass")[0].innerHTML = "Hello Universe";
+        // document.getElementsByTagName("div")[2].innerHTML = "Hello Dhaka";
+
+        const myid = document.querySelector("#myid");
+        const myClass = document.querySelector(".myClass");
+        const div = document.querySelector("div");
+        const myBtn = document.querySelector("#myBtn");
+
+        myid.innerHTML = "Hello World";
+        myClass.innerHTML = "Hello Universe";
+        div.innerHTML = "Hello Dhaka";
+
+        const btnFunc = () => {
+            alert("Button Clicked");
+        }
+
+        myBtn.addEventListener("click", () => {
+            alert("Another Button Clicked");
+        })
+
+        const lightOn = document.querySelector("#lightOn");
+        const lightOff = document.querySelector("#lightOff");
+        const lightImg = document.querySelector("#lightImg");
+        
+        lightOn.addEventListener("click", () => {
+            lightImg.src = "./images/pic_bulbon.gif";
+        })
+
+        lightOff.addEventListener("click", () => {
+            lightImg.src = "./images/pic_bulboff.gif";
+        })
+    </script>
+</body>
+</html>
