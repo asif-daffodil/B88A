@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    >.accordions{
+        margin: auto;
+        width: 400px;
+        >.accordion{
+            margin-bottom: 10px;
+            >.title{
+                border: 1px solid #000;
+                padding: 10px;
+                cursor: pointer;
+                &.active{
+                    background-color: #000;
+                    color: #fff;
+                }
+            }
+            >.details{
+                padding: 10px;
+                border: 1px solid #000;
+                display: none;
+            }
+        }
+    }
+}
