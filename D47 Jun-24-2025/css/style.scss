@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    >.slide{
+        width: 100%;
+        display: none;
+        position: relative;
+        >img{
+            width: 100%;
+        }
+        &.active {
+            display: block;
+        }
+        >.caption{
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+        }
+    }
+    >.left {
+        position: absolute;
+        top: 0;
+        left: -100px;
+        bottom: 0;
+        cursor: pointer;
+        height: calc(100% - 4px);
+        width: 100px;
+        display: grid;
+        place-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 2rem;
+        transition: 0.5s;
+    }
+    >.right {
+        position: absolute;
+        top: 0;
+        right: -100px;
+        cursor: pointer;
+        height: calc(100% - 4px);
+        width: 100px;
+        display: grid;
+        place-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 2rem;
+        transition: 0.5s;
+    }
+
+    &:hover > .left {
+        left: 0;
+    }
+
+    &:hover > .right {
+        right: 0;
+    }
+
+    >.dots {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        >span {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s;
+            &.active {
+                background-color: white;
+                border: 2px solid black;
+            }
+        }
+    }
+}
